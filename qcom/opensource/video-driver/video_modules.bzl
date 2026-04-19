@@ -60,9 +60,9 @@ module_entry(
         ],
     },
     deps = [
-            "//vendor/qcom/opensource/mm-drivers:mm_drivers_headers",
-            "//vendor/qcom/opensource/synx-kernel:synx_headers",
-            "//vendor/qcom/opensource/mmrm-driver:%b_mmrm_driver",
+            "//vendor/ayn/cq8725s-modules/qcom/opensource/mm-drivers:mm_drivers_headers",
+            "//vendor/ayn/cq8725s-modules/qcom/opensource/synx-kernel:synx_headers",
+            "//vendor/ayn/cq8725s-modules/qcom/opensource/mmrm-driver:%b_mmrm_driver",
         ],
 )
 

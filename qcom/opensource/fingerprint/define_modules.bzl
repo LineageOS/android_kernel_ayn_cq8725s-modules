@@ -13,13 +13,13 @@ def define_modules(target, variant):
     ddk_module(
         name = rule_base,
         out = "qbt_handler.ko",
-        deps = ["//msm-kernel:all_headers"],
+        deps = ["//vendor/ayn/kernel:all_headers"],
         srcs = [
             "qbt_handler.c",
             "qbt_handler.h"
         ],
         includes = ["include/linux"],
-        kernel_build = "//msm-kernel:{}".format(tv),
+        kernel_build = "//vendor/ayn/kernel:{}".format(tv),
         visibility = ["//visibility:public"]
     )
 

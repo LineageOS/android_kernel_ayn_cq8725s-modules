@@ -6,8 +6,8 @@ def define_modules(target, variant):
 
     ddk_module(
         name = "{}_smem_mailbox".format(kernel_build_variant),
-        kernel_build = "//msm-kernel:{}".format(kernel_build_variant),
-        deps = ["//msm-kernel:all_headers"],
+        kernel_build = "//vendor/ayn/kernel:{}".format(kernel_build_variant),
+        deps = ["//vendor/ayn/kernel:all_headers"],
         srcs = [
             "smem-mailbox.c"
         ],
