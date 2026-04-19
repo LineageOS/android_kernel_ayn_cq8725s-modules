@@ -36,18 +36,18 @@ register_eva_module(
     ],
     config_deps = {
        "TARGET_SYNX_ENABLE": [
-          "//vendor/qcom/sm8750-modules/qcom/opensource/synx-kernel:synx_headers",
-           "//vendor/qcom/sm8750-modules/qcom/opensource/synx-kernel:%b_modules"
+          "//vendor/ayn/cq8725s-modules/qcom/opensource/synx-kernel:synx_headers",
+           "//vendor/ayn/cq8725s-modules/qcom/opensource/synx-kernel:%b_modules"
         ],
 	"TARGET_PRESIL_ENABLE": [
-            "//vendor/qcom/sm8750-modules/qcom/opensource/camera-kernel:camera_src_headers",
-	    "//vendor/qcom/sm8750-modules/qcom/opensource/camera-kernel:%b_camera",
+            "//vendor/ayn/cq8725s-modules/qcom/opensource/camera-kernel:camera_src_headers",
+	    "//vendor/ayn/cq8725s-modules/qcom/opensource/camera-kernel:%b_camera",
 	],
         "TARGET_DSP_ENABLE": [
-             "//vendor/qcom/sm8750-modules/qcom/opensource/dsp-kernel:%b_frpc-adsprpc"
+             "//vendor/ayn/cq8725s-modules/qcom/opensource/dsp-kernel:%b_frpc-adsprpc"
         ],
 	"TARGET_MMRM_ENABLE": [
-             "//vendor/qcom/sm8750-modules/qcom/opensource/mmrm-driver:%b_mmrm_driver"
+             "//vendor/ayn/cq8725s-modules/qcom/opensource/mmrm-driver:%b_mmrm_driver"
 	],
     },
 )

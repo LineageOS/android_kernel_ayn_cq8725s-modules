@@ -28,11 +28,11 @@ def define_shs(target, variant):
             "rmnet_shs_wq_mem.c",
             "rmnet_shs_wq_mem.h",
         ],
-        kernel_build = "//vendor/qcom/kernel:{}".format(kernel_build_variant),
+        kernel_build = "//vendor/ayn/kernel:{}".format(kernel_build_variant),
         deps = [
-            "//vendor/qcom/kernel:all_headers",
-            "//vendor/qcom/sm8750-modules/qcom/opensource/datarmnet:{}_rmnet_core".format(kernel_build_variant),
-            "//vendor/qcom/sm8750-modules/qcom/opensource/datarmnet:rmnet_core_headers",
+            "//vendor/ayn/kernel:all_headers",
+            "//vendor/ayn/cq8725s-modules/qcom/opensource/datarmnet:{}_rmnet_core".format(kernel_build_variant),
+            "//vendor/ayn/cq8725s-modules/qcom/opensource/datarmnet:rmnet_core_headers",
         ],
         copts = ["-Wno-misleading-indentation"],
     )

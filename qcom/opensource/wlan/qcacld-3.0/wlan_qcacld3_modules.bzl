@@ -2301,10 +2301,10 @@ def _define_module_for_target_variant_chipset(target, variant, chipset):
     chipset_ipaths = _chipset_header_map[chipset]
     hw_ipaths = _hw_header_map[hw]
 
-    deps = ["//vendor/qcom/kernel:all_headers"],
+    deps = ["//vendor/ayn/kernel:all_headers"],
     })
 
-    kernel_build = "//vendor/qcom/kernel:{}".format(tv),
+    kernel_build = "//vendor/ayn/kernel:{}".format(tv),
 
     ipaths = chipset_ipaths + hw_ipaths + _fixed_ipaths
 
@@ -2423,24 +2423,24 @@ def _define_module_for_target_variant_chipset(target, variant, chipset):
 
     if chipset == "qca6750" or chipset == "wcn7750" or chipset == "wcn6450":
         deps += [
-            "//vendor/qcom/sm8750-modules/qcom/opensource/wlan/platform:{}_icnss2".format(tv),
+            "//vendor/ayn/cq8725s-modules/qcom/opensource/wlan/platform:{}_icnss2".format(tv),
         ]
     else:
         deps += [
-            "//vendor/qcom/sm8750-modules/qcom/opensource/wlan/platform:{}_cnss2".format(tv),
+            "//vendor/ayn/cq8725s-modules/qcom/opensource/wlan/platform:{}_cnss2".format(tv),
         ]
 
     deps = deps + [
-        "//vendor/qcom/sm8750-modules/qcom/opensource/wlan/platform:{}_cnss_prealloc".format(tv),
-        "//vendor/qcom/sm8750-modules/qcom/opensource/wlan/platform:{}_cnss_utils".format(tv),
-        "//vendor/qcom/sm8750-modules/qcom/opensource/wlan/platform:{}_cnss_nl".format(tv),
-        "//vendor/qcom/sm8750-modules/qcom/opensource/wlan/platform:wlan-platform-headers",
+        "//vendor/ayn/cq8725s-modules/qcom/opensource/wlan/platform:{}_cnss_prealloc".format(tv),
+        "//vendor/ayn/cq8725s-modules/qcom/opensource/wlan/platform:{}_cnss_utils".format(tv),
+        "//vendor/ayn/cq8725s-modules/qcom/opensource/wlan/platform:{}_cnss_nl".format(tv),
+        "//vendor/ayn/cq8725s-modules/qcom/opensource/wlan/platform:wlan-platform-headers",
     ]
 
     if target != "x1e80100" and target != "anorak" and target != "neo-la":
         deps = deps + [
-            "//vendor/qcom/sm8750-modules/qcom/opensource/dataipa:include_headers",
-            "//vendor/qcom/sm8750-modules/qcom/opensource/dataipa:{}_{}_ipam".format(target, variant),
+            "//vendor/ayn/cq8725s-modules/qcom/opensource/dataipa:include_headers",
+            "//vendor/ayn/cq8725s-modules/qcom/opensource/dataipa:{}_{}_ipam".format(target, variant),
         ]
 
     print("name=", name)
