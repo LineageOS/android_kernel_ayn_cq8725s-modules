@@ -18,6 +18,24 @@
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "975288ba_2e646855",
+        "filename": "qcom/opensource/audio-kernel/audio_kernel_modules.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-10-17T18:43:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9ad35183_9365b177",
+      "revId": "7dcc753097b6da3a4a9c0b03a016afa1dab4f9b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "a9f5112f_c434ac1d",
@@ -31,6 +49,24 @@
       "writtenOn": "2026-10-15T21:38:32Z",
       "side": 1,
       "message": "\\ ?",
+      "revId": "7dcc753097b6da3a4a9c0b03a016afa1dab4f9b5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3e98c89b_d5549f40",
+        "filename": "qcom/opensource/audio-kernel/audio_kernel_product_board.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 16185
+      },
+      "writtenOn": "2026-10-17T18:43:02Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a9f5112f_c434ac1d",
       "revId": "7dcc753097b6da3a4a9c0b03a016afa1dab4f9b5",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
